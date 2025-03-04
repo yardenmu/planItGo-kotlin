@@ -1,0 +1,141 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/my_nav"
+    app:startDestination="@id/getStartedFragment">
+
+    <fragment
+        android:id="@+id/getStartedFragment"
+        android:name="com.example.planitgo_finalproject.ui.get_started.GetStartedFragment"
+        android:label="get_started_layout"
+        tools:layout="@layout/get_started_layout" >
+        <action
+            android:id="@+id/action_getStartedFragment_to_destinationFragment"
+            app:destination="@id/destinationFragment"
+            app:enterAnim="@anim/from_right"
+            app:exitAnim="@anim/to_left"
+            app:popEnterAnim="@anim/from_left"
+            app:popExitAnim="@anim/to_right"
+            app:popUpTo="@id/getStartedFragment"
+            app:popUpToInclusive="true" />
+    </fragment>
+    <fragment
+        android:id="@+id/destinationFragment"
+        android:name="com.example.planitgo_finalproject.ui.destination.DestinationFragment"
+        android:label="country_selection_layout"
+        tools:layout="@layout/destination_selection_layout" >
+        <action
+            android:id="@+id/action_destinationFragment_to_attractionFragment"
+            app:destination="@id/attractionFragment"
+            app:enterAnim="@anim/from_right"
+            app:exitAnim="@anim/to_left"
+            app:popEnterAnim="@anim/from_left"
+            app:popExitAnim="@anim/to_right" />
+    </fragment>
+    <fragment
+        android:id="@+id/attractionFragment"
+        android:name="com.example.planitgo_finalproject.ui.attraction.AttractionFragment"
+        android:label="attraction_layout"
+        tools:layout="@layout/attraction_layout" >
+        <action
+            android:id="@+id/action_attractionFragment_to_addEditFragment"
+            app:destination="@id/addEditFragment"
+            app:enterAnim="@anim/from_right"
+            app:exitAnim="@anim/to_left"
+            app:popEnterAnim="@anim/from_left"
+            app:popExitAnim="@anim/to_right"
+            app:popUpToInclusive="false" />
+        <action
+            android:id="@+id/action_attractionFragment_to_detailsAttractionFragment"
+            app:destination="@id/detailsAttractionFragment"
+            app:enterAnim="@anim/from_right"
+            app:exitAnim="@anim/to_left"
+            app:popEnterAnim="@anim/from_left"
+            app:popExitAnim="@anim/to_right"
+            app:popUpToInclusive="false" />
+        <action
+            android:id="@+id/action_attractionFragment_to_destinationFragment"
+            app:destination="@id/destinationFragment"
+            app:enterAnim="@anim/from_right"
+            app:exitAnim="@anim/to_left"
+            app:popEnterAnim="@anim/from_left"
+            app:popExitAnim="@anim/to_right"
+            app:popUpTo="@id/destinationFragment"
+            app:popUpToInclusive="true" />
+    </fragment>
+    <fragment
+        android:id="@+id/addEditFragment"
+        android:name="com.example.planitgo_finalproject.ui.add_edit_attraction.AddEditFragment"
+        android:label="add_edit_att_layout"
+        tools:layout="@layout/add_edit_att_layout" >
+        <action
+            android:id="@+id/action_addEditFragment_to_attractionFragment"
+            app:destination="@id/attractionFragment"
+            app:enterAnim="@anim/from_right"
+            app:exitAnim="@anim/to_left"
+            app:popEnterAnim="@anim/from_left"
+            app:popExitAnim="@anim/to_right"
+            app:popUpTo="@id/attractionFragment"
+            app:popUpToInclusive="true" />
+        <action
+            android:id="@+id/action_addEditFragment_to_favoriteFragment"
+            app:destination="@id/favoriteFragment"
+            app:enterAnim="@anim/from_right"
+            app:exitAnim="@anim/to_left"
+            app:popEnterAnim="@anim/from_left"
+            app:popExitAnim="@anim/to_right"
+            app:popUpTo="@id/favoriteFragment"
+            app:popUpToInclusive="true" />
+    </fragment>
+    <fragment
+        android:id="@+id/detailsAttractionFragment"
+        android:name="com.example.planitgo_finalproject.ui.details_attraction.DetailsAttractionFragment"
+        android:label="details_layout"
+        tools:layout="@layout/details_layout" >
+        <action
+            android:id="@+id/action_detailsAttractionFragment_to_attractionFragment"
+            app:destination="@id/attractionFragment"
+            app:enterAnim="@anim/from_right"
+            app:exitAnim="@anim/to_left"
+            app:popEnterAnim="@anim/from_left"
+            app:popExitAnim="@anim/to_right"
+            app:popUpTo="@id/attractionFragment"
+            app:popUpToInclusive="true" />
+        <action
+            android:id="@+id/action_detailsAttractionFragment_to_favoriteFragment"
+            app:destination="@id/favoriteFragment"
+            app:enterAnim="@anim/from_right"
+            app:exitAnim="@anim/to_left"
+            app:popEnterAnim="@anim/from_left"
+            app:popExitAnim="@anim/to_right"
+            app:popUpTo="@id/favoriteFragment"
+            app:popUpToInclusive="true" />
+    </fragment>
+    <fragment
+        android:id="@+id/favoriteFragment"
+        android:name="com.example.planitgo_finalproject.ui.favorite.FavoriteFragment"
+        android:label="favorite_layout"
+        tools:layout="@layout/favorite_layout" >
+        <action
+            android:id="@+id/action_favoriteFragment_to_detailsAttractionFragment"
+            app:destination="@id/detailsAttractionFragment"
+            app:enterAnim="@anim/from_right"
+            app:exitAnim="@anim/to_left"
+            app:popEnterAnim="@anim/from_left"
+            app:popExitAnim="@anim/to_right" />
+        <action
+            android:id="@+id/action_favoriteFragment_to_addEditFragment"
+            app:destination="@id/addEditFragment"
+            app:enterAnim="@anim/from_right"
+            app:exitAnim="@anim/to_left"
+            app:popEnterAnim="@anim/from_left"
+            app:popExitAnim="@anim/to_right" />
+    </fragment>
+    <fragment
+        android:id="@+id/translateFragment"
+        android:name="com.example.planitgo_finalproject.ui.Translate.TranslateFragment"
+        android:label="translate_layout"
+        tools:layout="@layout/translate_layout" >
+    </fragment>
+</navigation>

@@ -1,0 +1,17 @@
+<resources xmlns:tools="http://schemas.android.com/tools">
+    <!-- Base application theme. -->
+    <style name="Base.Theme.PlanITgofinalProject" parent="Theme.Material3.DayNight.NoActionBar">
+        <!-- Customize your light theme here. -->
+        <!-- <item name="colorPrimary">@color/my_light_primary</item> -->
+    </style>
+
+    <style name="Theme.PlanITgofinalProject" parent="Base.Theme.PlanITgofinalProject" />
+    <style name="CustomFABTheme" parent="Widget.MaterialComponents.FloatingActionButton">
+        <item name="tint">@color/white</item>
+        <item name="backgroundTint">@color/dark_blue</item>
+    </style>
+    <style name="CustomTextInputStyle" parent="Widget.MaterialComponents.TextInputLayout.OutlinedBox">
+        <item name="boxStrokeColor">@color/dark_blue</item>
+        <item name="hintTextColor">@color/dark_blue</item>
+    </style>
+</resources>

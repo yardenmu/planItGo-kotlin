@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/background_img"
+    tools:context="com.example.planitgo_finalproject.ui.destination.DestinationFragment">
+    <TextView
+        android:id="@+id/title_selectD"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/select_destination"
+        android:gravity="center"
+        android:layout_marginTop="45dp"
+        android:textColor="@color/black"
+        android:fontFamily="@font/poppins_semibold"
+        android:textSize="24sp"
+        android:shadowRadius="3"
+        android:shadowDy="2"
+        android:shadowDx="2"
+        android:shadowColor="@color/blue"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"/>
+
+    <AutoCompleteTextView
+        android:id="@+id/search_city_actv"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_marginTop="20dp"
+        android:inputType="text"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/title_selectD"
+        android:hint="@string/search_city"
+        android:background="@drawable/white_bg"
+        android:layout_marginHorizontal="32dp"
+        android:padding="10dp"
+        android:layout_marginBottom="8dp"
+        android:completionThreshold="3" />
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/country_rv_selectD"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        app:layout_constraintHeight_percent="0.6"
+        android:layout_marginHorizontal="32dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"/>
+</androidx.constraintlayout.widget.ConstraintLayout>
