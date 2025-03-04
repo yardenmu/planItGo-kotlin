@@ -28,6 +28,7 @@ This project was developed by me and two other collaborators, working together t
 Feel free to check out the screenshots and video demo below to see the app in action!
 
 ![Screenshot1](photo1.png)
-![Screenshot2](path/to/screenshot2.png)
+![Screenshot2](photo2.png)
+![Screenshot3](photo3.png)
 
 [Watch the demo video](https://drive.google.com/file/d/1WHyJrk4K8rVNoNmudnbr-QRztIfo7Iuy/view?usp=drive_link)
